@@ -1,0 +1,119 @@
+.calendar-todo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar {
+    width: 350px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f9f9f9;
+  }
+
+  .calendar .calendar-header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+
+  
+  .weekdays, .days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .day, .empty-day {
+    border-radius: 50%;    
+    border: 1px solid #ddd;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .day:hover {
+    background: #e3e3e3;
+  }
+  
+  .today {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .selected {
+    background: #ff9800;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .todo-section {
+    flex: 1;
+  }
+  
+  .task-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .task-input input {
+    width: 250px;
+    ;
+    border-radius: 6px;
+  }
+  
+  .task-input input {
+    height: 30px;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .task-input .time-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+  }
+  
+  .task-number {
+    font-weight: bold;
+  }
+  
+  .task-time {
+    color: gray;
+  }
+  
+  .delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  

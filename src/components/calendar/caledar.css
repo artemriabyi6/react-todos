@@ -6,7 +6,7 @@
   }
   
   .calendar {
-    width: 350px;
+    width: 280px;
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 10px;
@@ -35,7 +35,7 @@
   .day, .empty-day {
     border-radius: 50%;    
     border: 1px solid #ddd;
-    min-height: 50px;
+    min-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
